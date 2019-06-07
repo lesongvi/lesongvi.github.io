@@ -1,0 +1,120 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow">
+		<title>Cumul.io Status</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+	  <link rel="apple-touch-icon" sizes="57x57" href="https://cumul.io/assets/favico/apple-icon-57x57.png">
+	  <link rel="apple-touch-icon" sizes="60x60" href="https://cumul.io/assets/favico/apple-icon-60x60.png">
+	  <link rel="apple-touch-icon" sizes="72x72" href="https://cumul.io/assets/favico/apple-icon-72x72.png">
+	  <link rel="apple-touch-icon" sizes="76x76" href="https://cumul.io/assets/favico/apple-icon-76x76.png">
+	  <link rel="apple-touch-icon" sizes="114x114" href="https://cumul.io/assets/favico/apple-icon-114x114.png">
+	  <link rel="apple-touch-icon" sizes="120x120" href="https://cumul.io/assets/favico/apple-icon-120x120.png">
+	  <link rel="apple-touch-icon" sizes="144x144" href="https://cumul.io/assets/favico/apple-icon-144x144.png">
+	  <link rel="apple-touch-icon" sizes="152x152" href="https://cumul.io/assets/favico/apple-icon-152x152.png">
+	  <link rel="apple-touch-icon" sizes="180x180" href="https://cumul.io/assets/favico/apple-icon-180x180.png">
+	  <link rel="icon" type="image/png" sizes="192x192"  href="https://cumul.io/assets/favico/android-icon-192x192.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="https://cumul.io/assets/favico/favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="96x96" href="https://cumul.io/assets/favico/favicon-96x96.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="https://cumul.io/assets/favico/favicon-16x16.png">
+	  <link rel="manifest" href="https://cumul.io/assets/favico/manifest.json">
+	  <meta name="msapplication-TileColor" content="#fea500">
+	  <meta name="msapplication-TileImage" content="https://cumul.io/assets/favico/ms-icon-144x144.png">
+	  <meta name="theme-color" content="#fea500">
+
+		<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	  <meta name="description" content="Check current status of Cumul.io systems">
+
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js"/></script>
+		<script type="text/javascript" src="js/status.min.js"/></script>
+		<script type="text/javascript"> 
+			(function(a,e,f,g,b,c,d) {a[b]||(c=e.createElement(f),c.async=1,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d));a[b]=a[b]||{};a[b].addDashboard=a[b].addDashboard||function(c){(a[b].list=a[b].list||[]).push(c)}})(window,document,'script','https://cdn-a.cumul.io/js/cumulio.min.js','Cumulio'); 
+		
+			Cumulio.addDashboard({ 
+			  dashboardId: 'e34ed522-70de-4837-b07f-6a8bec432c83',
+			  chartId: '6a6529c3-17bb-4abf-8560-76dea2743393',
+			  container: '#response-times-designer',
+			  key: 'c25d99b5-34be-4365-836c-3d7d791849fd',
+			  token: 'hkdhf0JXkwQjIA5Uffi8uwyiogBEhq0X271LYBsHUJvgwuVgNTotnTPXarb2y2V8OFwQpELz7dSPW6QYYOrNpMyjQkC2Kv36ZrEGnfNv1fakCLXinTS4N98HpmEXIOXj122KvuNlUXZPPAYw5S2U62',
+			  dimensions: {
+			  	height: '238px'
+			  }
+			});
+
+			Cumulio.addDashboard({ 
+			  dashboardId: 'e34ed522-70de-4837-b07f-6a8bec432c83',
+			  chartId: '6a6529c3-17bb-4abf-8560-76dea2743393',
+			  container: '#response-times-coreapi',
+			  key: '19ad94c6-e287-4ae8-95de-81fdd13850bb',
+			  token: 'Gq1H9lbZNovD3J2dNhbSDcE3q2g8q9XAP9zAhFKpFxHaw0GEmgG0Im1CfcYcapR2BPkAC2HBCJksjMh9BLUiwc9zwzT16thRDzTgqEPfA9guV7Y89PYWdKeeHlELAjjZp6Xfx33U7q76wftvMj5ucc'
+			});
+		</script>
+	</head>
+	<body>
+		<main class="wrapper">
+			<nav class="navigation">
+				<section class="container">
+					<a class="navigation-title" href="https://cumul.io">
+						<img class="img" src="https://cumul.io/assets/favico/logo.svg">
+						<h1 class="title">Cumul.io Status</h1>
+					</a>
+				</section>
+			</nav>
+
+			<section class="container" id="main">
+				<div class="panel operational">
+					<a href="#incidents">
+						<span>All Systems Operational</span>
+					</a>
+				</div>
+				
+				<h4 id="systems">Systems</h4>
+				<ul class="systems">
+				</ul>
+
+				<h4 id="response-times">Response times</h4>
+
+				<div>
+					<span>Designer</span>
+					<div id="response-times-designer"></div>
+				</div>
+				<div>
+					<span>Core API</span>
+					<div id="response-times-coreapi"></div>
+				</div>
+
+				<div class="integration-note">
+					Did you know? These charts are integrated Cumul.io dashboards. You can add them to your own apps as well. <a href="https://cumul.io/integrate">Read more about it here</a>.
+				</div>
+
+				<h4 id="incidents" class="clearfix">Incidents</h4>
+
+				<div id="incidents-list">
+					<div class="incident">
+						<span><i>None in last 30 days</i></span>
+					</div>
+				</div>
+
+			</section>
+
+			<footer class="footer">
+				<section class="container">
+					<hr/>
+					<p>
+						Monitoring powered by <a href="https://pingdom.com">Pingdom</a>.
+						Status page based on <a href='https://github.com/jayfk/statuspage'>jayfk/statuspage</a>.
+						<span style="float:right;">
+							© <a href="https://cumul.io">Cumul.io</a> NV 2019
+						</span>
+					</p>
+				</section>
+			</footer>
+		</main>
+	</body>
+</html>
